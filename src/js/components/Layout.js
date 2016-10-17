@@ -26,7 +26,9 @@ export default class Layout extends React.Component {
   render() {
     const resultList = this.state.searchResults.map( result =>
       <div key={result.id} id={result.id}>
-        {result.html_url}
+        <div className="result-item">
+          <a href={result.html_url} target="_blank"> {result.full_name}</a>
+        </div>
       </div>)
     return (
       <div>
