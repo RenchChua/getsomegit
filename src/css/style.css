@@ -1,0 +1,15 @@
+body{
+  margin: 20px;
+}
+
+.search-box{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: 20px;
+}
+
+.btn{
+  margin-bottom: 7px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
