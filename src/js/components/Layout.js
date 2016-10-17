@@ -26,18 +26,24 @@ export default class Layout extends React.Component {
   render() {
     const resultList = this.state.searchResults.map( result =>
       <div key={result.id} id={result.id}>
-        <div className="result-item">
-          <a href={result.html_url} target="_blank"> {result.full_name}</a>
+        <div className="result-item-container col-lg-12 col-xs-12">
+          <img className="avatar_img" src={result.owner.avatar_url} alt="avatar_url" />
+          <h2>{result.full_name}</h2>
         </div>
       </div>)
+
     return (
       <div>
-        <input className="search-box" type="text" ref="searchTerms" placeholder="Whatcha looking for?" />
-        <button className="btn keywords-btn" onClick={this.searchKeywords.bind(this)}>
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-        <div className="show-results">
-          {resultList}
+        <div className="search-group">
+          <input className="search-box" type="text" ref="searchTerms" placeholder="Whatcha looking for?" />
+          <button className="btn keywords-btn" onClick={this.searchKeywords.bind(this)}>
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div className="results-container col-lg-12">
+          <div className="show-results col-lg-9">
+            {resultList}
+          </div>
         </div>
       </div>
     );
