@@ -21,6 +21,14 @@ body{
   border-bottom-left-radius: 0px;
 }
 
+.no-keywords{
+  display: none;
+}
+
+.none-found{
+  display: none;
+}
+
 .results-container{
   display: flex;
   flex-direction: column;
@@ -37,9 +45,9 @@ body{
 
 .result-item-container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;;
   border-radius: 6px;
   background-color: #f2eee6;
   -webkit-box-shadow: 17px 9px 26px -1px rgba(143,135,143,0.62);
@@ -53,13 +61,36 @@ body{
 }
 
 .avatar_img{
-  display: inline-block;
+  display: block;
   border-radius: 50%;
   height: 60px;
 }
 
-.result-item-container h2{
-  display: inline-block;
+.result-basic{
+  display: flex;
+  flex: 0;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.result-basic h2{
+  display: block;
   margin-left: 30px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+}
+
+.result-expanded{
+  display: none;
+  flex: 1;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.watchers-count{
+  display: inline-flex;
+}
+
+.followers-count{
+  display: inline-flex;
+  margin-left: 20px;
 }
