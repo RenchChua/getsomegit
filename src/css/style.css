@@ -7,18 +7,20 @@ body{
 }
 
 .search-box{
-  display: inline-block;
+  display: inline-flex;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 20px;
+  outline: none;
 }
 
 .btn{
-  display: inline-block;
+  display: inline-flex;
   margin-bottom: 7px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+  outline: none;
 }
 
 .no-keywords{
@@ -93,4 +95,9 @@ body{
 .followers-count{
   display: inline-flex;
   margin-left: 20px;
+}
+
+.language{
+  display: inline-flex;
+  margin-left: 10px;
 }
