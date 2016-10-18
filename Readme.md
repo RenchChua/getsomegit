@@ -41,7 +41,6 @@ Users enter the keywords that they want to search for. The app then returns the 
 ## Things to improve
 
 [x] Should make the app views responsive
-
 [x] Can improve on the how the app looks
 
 ## Tech Stack
