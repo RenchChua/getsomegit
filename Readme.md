@@ -1,5 +1,5 @@
 # Getsomegit
-A front-end app to get some gits. It consumes Github's API. Try it out here: [https://renchchua.github.io/getsomegit/](https://renchchua.github.io/getsomegit/)
+A front-end app to get some gits. It consumes Github's API. Try it out here: [https://renchchua.github.io/getsomegit/](https://renchchua.github.io/getsomegit/). To search, type in the keyword and click the magnifying glass!
 
 ## Basic information
 Users enter the keywords that they want to search for. The app then returns the repo name and the owner of the repo in the format owner/repo name. The user can then click on any of the repo to find out more details. Details that will be shown are:
